@@ -4,7 +4,7 @@ body{
 
 header {
 	background: url("f_cinza.jpg");
-	padding: 20px 0;
+	
 }
 
 .caixa {
@@ -177,7 +177,7 @@ form label, form legend {
 
 .beneficios{
 	padding: 3em 0;
-	background: #87cefa;
+	background: linear-gradient(to right, #56ccf2, #2f80ed);
 }
 
 .conteudo-beneficios{
@@ -201,6 +201,7 @@ form label, form legend {
 }
 
 .itens:before{
+	padding-left: 28px;
 	content: "🌠"
 }
 
@@ -222,7 +223,7 @@ form label, form legend {
 }
 
 .imagem-beneficios:hover{
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 .mapa{
@@ -242,13 +243,19 @@ form label, form legend {
 }
 
 .video{
-	width: 360px;
+	text-align: center;
 	margin: 2em auto;
+	width: 65%;
 }
 
 @media screen and (max-width: 480px){
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produtos li{
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .produtos, .produtos li{
 		width: auto;
+	}
+	
+	.video {
+		width: auto;
+		height: auto;
 	}
 
 	h1{
@@ -259,7 +266,17 @@ form label, form legend {
 		position: static;
 	}
 
-	.lista-beneficios, .imagem-beneficios{
+	.lista-beneficios {
+		float: left;
+	}
+
+	.imagem-beneficios{
 		width: 100%;
+	}
+	
+	.imagem-beneficios {
+		width: 35%;
+		transition: 400ms;
+		box-shadow: 7px 7px 7px #000000;
 	}
 }

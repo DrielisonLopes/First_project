@@ -1,0 +1,44 @@
+.corpo-games{
+    background-image: url(../img/c03.jpg);
+    text-align: center;          
+    padding-right: 12%;
+    margin-right: 3.6%;
+  }
+
+  ul{
+    grid-row: auto;
+  }
+
+  .link-games{
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .logo-lopinho{
+    padding-top: 12px;
+    padding-bottom:20px ;
+    padding-left: 20%;
+  }
+
+  h3{
+    color: #014869;
+    text-align: center;
+    padding-right: 33%;
+    padding-left: 15%;
+  }
+    @media screen and (max-width: 480px){
+      h3{
+        padding-right: 1px;
+        padding-left: 1px;
+      }
+      .logo-lopinho{
+        padding-left: 0em;
+      }
+      
+    }

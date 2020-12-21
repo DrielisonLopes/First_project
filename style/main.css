@@ -7,6 +7,7 @@ body{
 img{
     max-width: 100%;
 }
+
 .container{
     margin-right: auto;    
     margin-left: auto;
@@ -116,10 +117,6 @@ img{
     right: 10px;
 }
 
-
-
-
-
 .js .quote-slideshow{
     position: relative;
     width: 100%;
@@ -206,9 +203,6 @@ img{
     text-transform: uppercase;
 }
 
-
-
-
 .people-cards{
     margin-top: 2.5em;
     margin-bottom: 2.5em;
@@ -255,7 +249,6 @@ img{
 }
 
 
-
 .content{
     background: #f8f9f9;
     padding: 20px 0 80px;
@@ -283,8 +276,11 @@ img{
     display: inline-block;
     transition: background .5s;
 }
-.button:hover{
-    background-color: #929da5;
+.button-primary:hover{
+    background-color: #87faa0;
+}
+.button-secundary:hover{
+    background-color: #fa9187;
 }
 .button-primary{
     background-color: #87cefa;
@@ -294,7 +290,6 @@ img{
     background-color: #455357;
     color: white;
 }
-
 
 
 .last-articles__title{
@@ -316,11 +311,15 @@ img{
     grid-gap: 0;
     background: yellow;
 }
+
 .last-articles__thumbs img{
     display: block;
     width: 100%;
 }
 
+.img-laptop{
+    max-width: 80%;
+}
 
 .laptop-slider{
     background-color: #242a2c;
@@ -335,9 +334,6 @@ img{
 .slideshow figure{
     display: inline-block;
 }
-
-
-
 
 .quote-container{
     background-color: #87cefa;
@@ -363,9 +359,9 @@ img{
     margin-top: 5em;
 }
 
-
 .footer{
     background: url("../quemSou/bg.jpg");
+    background-size: cover;
     padding: 50px 0 150px;
     color: #ffffff;
     font-size: 14px;
@@ -373,11 +369,13 @@ img{
 
 .footer__links li{
     list-style: none;
+    padding-right: 7%;
+    display: inline-block;
 }
+
 .footer__links a{
     color: #ffffff;
-    display: block;
-    font-weight: 600;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -420,14 +418,17 @@ img{
         background: white;        
     }
     
-    
     .people-cards{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
     }
     
-    
+    .img-laptop{
+        max-width: 100%;
+        padding-left: 2%;
+    }
+
     .content .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -443,6 +444,12 @@ img{
     }
     .footer .container > * {
         margin: 1.5em;
+    }
+    .footer__links a{
+        color: #ffffff;
+        display: block;
+        font-weight: 600;
+        text-decoration: none;
     }
 }
 
